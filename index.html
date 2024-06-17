@@ -97,7 +97,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted class-to-track-whatsapp-cta-conversion" target="_blank" href="https://wa.me/+551144851717?text=Oi">Agendar visita</a>
+      <a class="btn-getstarted" href="#" data-bs-toggle="modal" data-bs-target="#modalContactUs">Agendar visita</a>
 
     </div>
   </header>
@@ -114,7 +114,7 @@
           <h1 data-aos="fade-up">Atendimento <span>veterinário em domicílio</span></h1>
           <p data-aos="fade-up" data-aos-delay="100">São 15 anos de experiência: conforto, pontualidade e preços acessíveis.<br></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="btn-get-started class-to-track-whatsapp-cta-conversion">Agendar visita</a>
+            <a data-bs-toggle="modal" data-bs-target="#modalContactUs" href="#" class="btn-get-started">Agendar visita</a>
           </div>
           <img src="assets/img/veterinaria-domiciliar-segurando-cachorro.png" class="img-fluid hero-img mt-3" alt="" data-aos="zoom-out" data-aos-delay="300" style="max-width: 300px;">
           <!--<div>
@@ -188,7 +188,7 @@
               <li><i class="bi bi-check-circle"></i> <span>Especialista em clínica e cirurgia geral de pequenos animais (Equalis)</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Especialista em felinos (Famesp)</span></li>
             </ul>
-            <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="read-more class-to-track-whatsapp-cta-conversion"><span>Agendar visita</span><i class="bi bi-arrow-right"></i></a>
+            <a data-bs-toggle="modal" data-bs-target="#modalContactUs" href="#" class="read-more"><span>Agendar visita</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -411,7 +411,7 @@
             </div>
 
             <div class="text-center mt-4">
-              <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="read-more mx-auto class-to-track-whatsapp-cta-conversion"><span>Agendar visita</span><i class="bi bi-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#modalContactUs" href="#" class="read-more mx-auto"><span>Agendar visita</span><i class="bi bi-arrow-right"></i></a>
             </div>
 
           </div>
@@ -465,7 +465,7 @@
               <div class="faq-item">
                 <h3>Quais são os preços dos serviços?</h3>
                 <div class="faq-content">
-                  <p>Para consultar os preços, por favor entre em contato através do nosso WhatsApp <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="class-to-track-whatsapp-cta-conversion">clicando aqui</a>.</p>
+                  <p>Para consultar os preços, por favor <a href="#prices">clique aqui</a>.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -704,14 +704,80 @@
 
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="modalContactUs" tabindex="-1" aria-labelledby="modalContactUsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex">
+            <div>
+              <span class="vet-photo"></span>
+            </div>
+            <div>
+              <h5 class="modal-title" id="modalContactUsLabel">Agende a visita da veterinária</h5>
+              <p>Dra Tatiane Faria é veterinária há mais de 15 anos. O atendimento domiciliar proporciona comodidade, evita o stress e a ansiedade do transporte.</p>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form name="form-contact-us" id="form-contact-us" class="needs-validation hide-after-form-submission-ok" novalidate>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+              <label for="floatingInput">Nome</label>
+              <div class="invalid-feedback">
+                Por favor preencha o seu nome.
+              </div>
+            </div>            
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+              <label for="floatingInput">Email</label>
+              <div class="invalid-feedback">
+                Por favor preencha o seu email.
+              </div>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Seu whatsapp (DDD + Telefone)" required>
+              <label for="floatingPassword">Whatsapp (DDD + Telefone)</label>
+              <div class="invalid-feedback">
+                Por favor preencha o seu whatsapp.
+              </div>
+            </div>
+          </form>
+
+          <div class="d-none show-after-form-submission-error">
+            <div class="alert alert-error alert-dismissible" role="alert">
+              Ops, algo falhou! Por favor, tente novamente...
+            </div>
+          </div>
+
+          <div class="d-none show-after-form-submission-ok">
+            <div class="alert alert-success" role="alert">
+              <i class="bi bi-check-all text-primary"></i> Obrigado! Entraremos em contato dentro de alguns instantes.
+            </div>
+            <div>
+              Se preferir, pode nos enviar uma mensagem via WhatsApp também!
+              <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="mx-2 d-inline-block class-to-track-whatsapp-cta-conversion"><i class="bi bi-whatsapp"></i> <span>Falar com atendente</span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer hide-after-form-submission-ok">
+          <button type="submit" form="form-contact-us" class="btn btn-primary w-100 py-3">Tenho interesse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="whatsapp-button btn btn-success d-flex align-items-center justify-content-center class-to-track-whatsapp-cta-conversion"><i class="bi bi-whatsapp"></i></a>
+  <!--<a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="whatsapp-button btn btn-success d-flex align-items-center justify-content-center class-to-track-whatsapp-cta-conversion"><i class="bi bi-whatsapp"></i></a>-->
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -720,6 +786,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
 
 </body>
 

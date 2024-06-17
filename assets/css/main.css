@@ -706,7 +706,7 @@ h6 {
   opacity: 0;
   right: 23px;
   bottom: -15px;
-  z-index: 99999;
+  z-index: 1;
   background-color: var(--accent-color);
   width: 44px;
   height: 44px;
@@ -728,7 +728,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 85px;
+  bottom: 20px;
 }
 
 
@@ -1973,6 +1973,52 @@ section#prices .read-more:hover i {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Contact Us Modal
+--------------------------------------------------------------*/
+#modalContactUs .modal-content {
+  border: 5px solid var(--accent-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+#modalContactUs .modal-header {
+  align-items: start;
+}
+#modalContactUs .modal-header,
+#modalContactUs .modal-footer {
+  border: none;
+}
+#modalContactUs .modal-header p {
+  font-size: 0.75rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #999;
+}
+#modalContactUs .modal-header h5 {
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+#modalContactUs span.vet-photo {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-image: url('../img/veterinaria-tatiane.jpg');
+  background-size: cover;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+#modalContactUs button[type="submit"] {
+  background-color: var(--accent-color);
+  transition: all 0.4s;
+  border: none;
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+#modalContactUs button[type="submit"]:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
