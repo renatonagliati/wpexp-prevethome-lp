@@ -88,7 +88,7 @@ h6 {
 }
 
 .header .logo img {
-  max-width: 110px;
+  max-width: 130px;
   margin-right: 8px;
 }
 
@@ -1286,6 +1286,59 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Prices Section
+--------------------------------------------------------------*/
+section#prices div.table-responsive {
+  border: 1px solid var(--accent-color);
+}
+
+section#prices table thead th {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+}
+
+section#prices table thead th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section#prices table small {
+  font-style: italic;
+  color: #999;
+}
+
+section#prices .read-more {
+  background: var(--orange-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#prices .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+section#prices .read-more:hover {
+  background: color-mix(in srgb, var(--orange-color), transparent 20%);
+  padding-right: 19px;
+}
+
+section#prices .read-more:hover i {
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services {
@@ -1581,7 +1634,6 @@ section,
 
 .faq .faq-container .faq-item {
   position: relative;
-  padding: 20px;
   margin-bottom: 15px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 5px;
@@ -1601,6 +1653,7 @@ section,
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .faq .faq-container .faq-item h3 .num {
@@ -1652,7 +1705,8 @@ section,
   grid-template-rows: 1fr;
   visibility: visible;
   opacity: 1;
-  padding-top: 10px;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .faq .faq-container .faq-active .faq-toggle {
