@@ -101,7 +101,7 @@ h6 {
 
 @media (max-width: 480px) {
   .header .logo img {
-    max-height: 24px;
+    max-height: 40px;
   }
 
   .header .logo h1 {
@@ -1300,11 +1300,42 @@ section#prices table thead th {
 section#prices table thead th {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  border-bottom-color: var(--accent-color);
 }
 
 section#prices table small {
   font-style: italic;
   color: #999;
+}
+
+section#prices table td {
+  vertical-align: middle;
+  border-bottom: none;
+}
+
+section#prices table td .price {
+  font-size: 1.20rem;
+}
+
+section#prices table td .price small {
+  color: inherit;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+section#prices table td[colspan] {
+  padding: 0;
+}
+
+section#prices table td[colspan] span {
+  font-size: 0.8rem;
+  background-image: linear-gradient(#e1eef2, white);
+  color: var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  padding: 0.85rem 0.25rem;
+  display: block;
+  margin: 0;
+  border-radius: 0;
 }
 
 section#prices .read-more {
