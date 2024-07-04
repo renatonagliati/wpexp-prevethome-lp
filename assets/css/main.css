@@ -73,6 +73,17 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn.btn-pv-green {
+  background: var(--green-color) !important;
+  color: var(--contrast-color) !important;
+}
+.btn.btn-pv-green:hover {
+  background: color-mix(in srgb, var(--green-color), transparent 20%) !important;
+}
+
+/*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
@@ -1315,6 +1326,7 @@ section#prices table td {
 
 section#prices table td .price {
   font-size: 1.20rem;
+  filter:blur(4px);
 }
 
 section#prices table td .price small {
