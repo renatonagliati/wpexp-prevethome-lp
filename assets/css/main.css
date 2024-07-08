@@ -1341,10 +1341,14 @@ section#prices table small {
 section#prices table td {
   vertical-align: middle;
   border-bottom: none;
+  cursor: pointer;
 }
 
 section#prices table td .price {
   font-size: 1.20rem;
+}
+
+section#prices table td .price.blurred {
   filter:blur(4px);
 }
 
