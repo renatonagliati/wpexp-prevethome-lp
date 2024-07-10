@@ -73,6 +73,7 @@
   /**
    * Scroll top button
    */
+  /*
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -90,6 +91,7 @@
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
+  */
 
   /**
    * Animation on scroll function and init
@@ -181,19 +183,17 @@ jQuery( function( $ ) {
 
 	jQuery(document).ready(function($){
 
-        $('section#prices table tr').on('click', function(e) {
-          console.log($(this));
-          console.log('clicked');
-            let $price = $(this).find('.price');
-            console.log($price.length)
-            if ( $price.length > 0 ) {
-              $price.removeClass('blurred');
-              setTimeout(() => {
-                $price.addClass('blurred');
-              }, 2500);
-            }
-        });
-
+    $('section#prices table tr').on('click', function(e) {
+        let $price = $(this).find('.price');
+        console.log($price.length)
+        if ( $price.length > 0 ) {
+          $price.removeClass('blurred');
+          setTimeout(() => {
+            $price.addClass('blurred');
+          }, 2500);
+        }
     });
+
+  });
 
 });

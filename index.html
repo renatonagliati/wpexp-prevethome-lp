@@ -60,6 +60,7 @@
 
   <!-- Hotjar Tracking Code for Site 5023135 (nome ausente) -->
   <script>
+    /*
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:5023135,hjsv:6};
@@ -68,6 +69,7 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    */
   </script>
 </head>
 
@@ -91,8 +93,17 @@
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">A veterinária</a></li>
-          <li><a href="#features">Serviços</a></li>
-          <li><a href="#prices">Preços</a></li>
+          <li class="dropdown">
+            <a href="#services">
+              <span>Serviços</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="#services">Consulta Veterinária</a></li>
+              <li><a href="#services">Vacinação de Gatos</a></li>
+              <li><a href="#services">Vacinação de Cães</a></li>
+              <li><a href="#services">Preparação p/ Viagens</a></li>
+            </ul>
+          </li>
           <li><a href="#faq">Dúvidas</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -173,7 +184,7 @@
     </section><!-- /Featured Services Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section pb-5">
 
       <div class="container">
 
@@ -217,8 +228,7 @@
       </div>
     </section><!-- /About Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+    <section id="services" class="services section light-background"><!-- Services Section -->
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -227,261 +237,112 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="row justify-content-between">
 
-          <div class="col-lg-5">
-            <div class="d-flex align-items-center">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                    <i class="bi bi-clipboard2-pulse"></i>
-                    <div>
-                      <h4>Consultas</h4>
-                      <p>
-                        O atendimento domiciliar evita o stress do transporte, protege filhotes e animais debilitados em relação ao contato com outros animais e oferece maior flexibilidade de horários.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                    <i class="bi bi-virus"></i>
-                    <div>
-                      <h4>Vacinação</h4>
-                      <p>
-                        Melhor prevenir do que remediar. A vacinação periódica previne diversas zoonoses (doenças transmitidas pelos animais ao homem, como:  Raiva, Giárdia, Leptospirose) e também doenças comuns em cães e gatos. Utilizamos somente vacinas importadas.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                    <i class="bi bi-cpu"></i>
-                    <div>
-                      <h4>Aplicação de Microchips</h4>
-                      <p>
-                        Microchips com validade internacional. Em caso de viagens, te orientamos gratuitamente sobre toda a documentação necessária e fazemos algumas etapas do processo (aplicação de microchip, emissão de atestado sanitário, atualização da carteirinha de vacinas, etc).
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul><!-- End Tab Nav -->
-            </div>
-
-            <div class="text-center mt-3">
-              <a href="#prices" class="read-more mx-auto"><span>Valores dos serviços</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 d-none d-lg-block">
-
-            <div class="tab-content">
-
-              <div class="tab-pane fade active show" id="features-tab-1">
-                <img src="assets/img/services/service-1.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-2">
-                <img src="assets/img/services/service-2.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-3">
-                <img src="assets/img/services/service-3.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Prices Section -->
-    <section id="prices" class="prices section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Veterinária em Domicílio</h2>
-        <p>Lista de valores para atendimento domiciliar em um raio de até 10km de distância do marco zero de SP</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
         <div class="row">
-
-          <div class="col-12 col-lg-6 mx-auto">
+          <div class="col-12 mx-auto">
             <div class="alert alert-info mb-4">
               <span class="d-block mb-2"><i class="bi bi-check2-circle"></i> <strong>O conforto do atendimento domiciliar com os mesmos preços de clínica!</strong></span>
               <span class="d-block"><i class="bi bi-check2-circle"></i> <normal><u>A Dra Tatiane tem mais de 15 anos de experiência:</u> pontual, atenciosa, calma, responde a dúvidas, ausculta, pesa e faz avaliação geral antes de qualquer procedimento, sempre prezando pelo bem-estar do paciente. Todo atendimento é feito com 
                zelo e carinho. Trabalha somente com vacinas importadas Pfizer/Merial.</normal></span>
             </div>
-            <div class="table-responsive text-center rounded">
-              <table class="table mx-auto mb-0">
-                <thead>
-                  <th>Serviço</th>
-                  <th>Preço</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina Antirrábica</strong>
-                        <small>Cães e Gatos</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 89<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Merial</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina V10</strong>
-                        <strong class="d-block">(Vanguard Plus)</strong>
-                        <small>Cães</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 139<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Pfizer</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>                  
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina V4</strong>
-                        <small>Gatos</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 139<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Pfizer</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina Giárdia</strong>
-                        <small>Cães</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 149<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Pfizer</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>                  
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina Bronchiguard</strong>
-                        <small>Cães</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 149<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Pfizer</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Vacina V5</strong>
-                        <small>Gatos</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 159<small>,90</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Importada Pfizer</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>                  
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Aplicação de Microchip</strong>
-                        <small>Cães e Gatos</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 200<small>,00</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Nanochip padrão internacional</small>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><span><i class="bi bi-balloon-heart mx-1"></i>Consulte descontos especiais p/ +1 vacina ou +1 pet!</span></td>
-                  </tr>                  
-                  <tr>
-                    <td>
-                      <div>
-                        <strong class="d-block">Consulta</strong>
-                        <small>Cães e Gatos</small>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span class="d-block text-success price blurred">R$ 200<small>,00</small></span>
-                        <small class="text-primary d-block"><i class="bi bi-check-circle mr-2"></i> em domicílio</small>
-                        <small>Com retorno em até 30 dias</small>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="text-center mt-4">
-              <!--<a data-bs-toggle="modal" data-bs-target="#modalContactUs" href="#" class="read-more mx-auto"><span>Agendar visita</span><i class="bi bi-arrow-right"></i></a>-->
-              <a href="https://wa.me/+551144851717?text=Oi%2C%20gostaria%20de%20saber%20os%20pre%C3%A7os" target="_blank" class="read-more btn btn-pv-green class-to-track-whatsapp-cta-conversion"><span>Consultar preços</span><i class="bi bi-whatsapp"></i></a>
-            </div>
-
           </div>
+        </div>        
+
+        <div class="row g-5">
+
+          <div class="col-lg-6">
+            <div class="service-item item-cyan position-relative d-block d-md-flex">
+              <div class="image">
+                <span style="background-image: url('./assets/img/background/abstract-shape-v0.png');"></span>
+                <img class="img-fluid" src="./assets/img/services/gato-cinza-v0.png">
+              </div>
+              <div>
+                <h3>Consulta Veterinária</h3>
+                <p>O atendimento domiciliar evita o stress do transporte, protege filhotes e animais debilitados em relação ao contato com outros animais e oferece maior flexibilidade de horários.</p>
+                <a href="https://wa.me/+551144851717?text=Oi, tenho interesse em consulta veterinária em domicílio" target="_blank" class="read-more stretched-link"></a>
+                <a href="#" target="_blank" class="btn btn-pv-green class-to-track-whatsapp-cta-conversion mt-3"><span>Agende agora</span><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6">
+            <div class="service-item item-orange position-relative d-block d-md-flex">
+              <div class="image">
+                <span style="background-image: url('./assets/img/background/abstract-shape-v0.png');"></span>
+                <img class="img-fluid" src="./assets/img/services/cao-mesclado-v0.png">
+              </div>
+              <div>
+                <h3>Vacinação de Cães</h3>
+                <p>Melhor prevenir do que remediar: a vacinação periódica previne diversas zoonoses (doenças transmitidas pelos animais ao homem, como:  Raiva, Giárdia, Leptospirose) e também doenças comuns em cães.</p>
+                <div class="vaccines-manufacturer mb-2 mt-2">
+                  <p>Utilizamos somente vacinas importadas:</p>
+                  <div class="d-flex">
+                    <div>
+                      <img width="74" src="./assets/img/suppliers/zoetis-logo.png">
+                    </div>
+                    <div>
+                      <img width="84" src="./assets/img/suppliers/msd-logo.png">
+                    </div>
+                    <div>
+                      <img width="94" src="./assets/img/suppliers/boehringer-logo.webp">
+                    </div>
+                  </div>
+                </div>
+                <a href="https://wa.me/+551144851717?text=Oi, tenho interesse em vacinação de cachorro em domicílio" target="_blank" class="read-more stretched-link"></a>
+                <a href="#" target="_blank" class="btn btn-pv-green class-to-track-whatsapp-cta-conversion mt-3"><span>Agende agora</span><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->          
+
+          <div class="col-lg-6">
+            <div class="service-item item-orange position-relative d-block d-md-flex">
+              <div class="image">
+                <span style="background-image: url('./assets/img/background/abstract-shape-v0.png');"></span>
+                <img class="img-fluid" style="max-width: 120px;" src="./assets/img/services/gato-amarelo-v0.png">
+              </div>
+              <div>
+                <h3>Vacinação de Gatos</h3>
+                <p>A vacinação em gatos previne diversas doenças muito comuns como clamidiose, FELV (leucemia felina) e doenças respiratórias como a rinotraqueíte felina e a calicivirose felina.</p>
+                <div class="vaccines-manufacturer mb-2 mt-2">
+                  <p>Utilizamos somente vacinas importadas:</p>
+                  <div class="d-flex">
+                    <div>
+                      <img width="74" src="./assets/img/suppliers/zoetis-logo.png">
+                    </div>
+                    <div>
+                      <img width="84" src="./assets/img/suppliers/msd-logo.png">
+                    </div>
+                    <div>
+                      <img width="94" src="./assets/img/suppliers/boehringer-logo.webp">
+                    </div>
+                  </div>
+                </div>
+                <a href="https://wa.me/+551144851717?text=Oi, tenho interesse em vacinação de gato em domicílio" target="_blank" class="read-more stretched-link"></a>
+                <a href="#" target="_blank" class="btn btn-pv-green class-to-track-whatsapp-cta-conversion mt-3"><span>Agende agora</span><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6">
+            <div class="service-item item-teal position-relative d-block d-md-flex">
+              <div class="image">
+                <span style="background-image: url('./assets/img/background/abstract-shape-v0.png');"></span>
+                <img class="img-fluid" src="./assets/img/services/cao-e-gato-turistas-v0.png">
+              </div>
+              <div>
+                <h3>Aplicação de Microchips</h3>
+                <p>Microchips com validade internacional. Em caso de viagens, te orientamos gratuitamente sobre toda a documentação necessária e fazemos algumas etapas do processo (aplicação de microchip, emissão de atestado sanitário, atualização da carteirinha de vacinas, etc).</p>
+                <a href="https://wa.me/+551144851717?text=Oi, tenho interesse em aplicação de microchip em domicílio" target="_blank" class="read-more stretched-link"></a>
+                <a href="#" target="_blank" class="btn btn-pv-green class-to-track-whatsapp-cta-conversion mt-3"><span>Agende agora</span><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
 
         </div>
 
       </div>
 
-    </section><!-- /Prices Section -->
+    </section><!-- /Services Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
@@ -526,7 +387,7 @@
               <div class="faq-item">
                 <h3>Quais são os preços dos serviços?</h3>
                 <div class="faq-content">
-                  <p>Para consultar os preços, por favor <a href="#prices">clique aqui</a>.</p>
+                  <p>Para consultar os preços, por favor <a href="#services">clique aqui</a>.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -831,8 +692,8 @@
   </div>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <!--<a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="whatsapp-button btn btn-success d-flex align-items-center justify-content-center class-to-track-whatsapp-cta-conversion"><i class="bi bi-whatsapp"></i></a>-->
+  <!--<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>-->
+  <a href="https://wa.me/+551144851717?text=Oi" target="_blank" class="whatsapp-button btn btn-success d-flex align-items-center justify-content-center class-to-track-whatsapp-cta-conversion"><i class="bi bi-whatsapp"></i></a>
 
   <!-- Preloader -->
   <div id="preloader" class="d-none">

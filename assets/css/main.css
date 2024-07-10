@@ -83,6 +83,14 @@ h6 {
   background: color-mix(in srgb, var(--green-color), transparent 20%) !important;
 }
 
+.btn.btn-pv-orange {
+  background: var(--orange-color) !important;
+  color: var(--contrast-color) !important;
+}
+.btn.btn-pv-orange:hover {
+  background: color-mix(in srgb, var(--orange-color), transparent 20%) !important;
+}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -1418,7 +1426,7 @@ section#prices .read-more:hover i {
   padding: 30px;
   transition: 0.3s;
   border-radius: 10px;
-  display: flex;
+  /* display: flex; */
 }
 
 .services .service-item .icon {
@@ -1506,6 +1514,62 @@ section#prices .read-more:hover i {
 .services .service-item:hover p {
   color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
+
+.services .service-item .image span {
+  background-size: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.services .service-item .image img {
+  z-index: 1;
+  position: absolute;
+  max-height: 45vw;
+}
+.services .service-item .image {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 200px;
+  margin-right: 1rem;
+  margin-bottom: 0rem;
+}
+.services .service-item .btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .service-item .btn i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.vaccines-manufacturer p {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-bottom: 3px !important;
+}
+.vaccines-manufacturer img {
+  margin-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .services .service-item .image {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # More Features Section
