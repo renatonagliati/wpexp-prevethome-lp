@@ -1850,6 +1850,9 @@ section#prices .read-more:hover i {
 .testimonials {
   --background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
 }
+.testimonials .stars {
+  color: #ffc107;
+}
 
 .testimonials .testimonial-item {
   background-color: var(--contrast-color);
