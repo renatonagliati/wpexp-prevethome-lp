@@ -920,7 +920,7 @@ section,
   position: absolute;
   bottom: -39px;
   max-width: 250px;
-  margin-left: 90px;
+  left: 90px;
 }
 
 .hero .container {
@@ -944,6 +944,54 @@ section,
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+}
+
+.hero .whatsapp-message {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 12px;
+  pointer-events: none;
+}
+.hero .message-bubble {
+  background-color: #e1ffc7;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: left;
+}
+.hero .message-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #e1ffc7 transparent transparent transparent;
+}
+.hero .message-time {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  text-align: right;
+  margin-top: 0px;
+  line-height: 1;
+  margin-bottom: -5px;
+}
+.hero .whatsapp-message p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.2;
+}
+.hero .message-time i {
+  font-size: 16px;
+}
+.hero .message-wrapper.message-1 {
+  position: absolute;
+  left: 75%;
+  top: 29%;
 }
 
 @media (min-width: 768px) {
@@ -1011,6 +1059,20 @@ section,
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .wrapper-messages {
+    width: 100%;
+    text-align: left;
+    margin-left: -20px;
+  }
+
+  .hero .wrapper-messages .message-1 {
+    right: -15px;
+    left: auto;
+    z-index: 1;
   }
 }
 
