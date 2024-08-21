@@ -916,6 +916,13 @@ section,
   background-color: rgb(205 226 234 / 85%);
 }
 
+.hero .hero-cat-img {
+  position: absolute;
+  bottom: -39px;
+  max-width: 250px;
+  margin-left: 90px;
+}
+
 .hero .container {
   position: relative;
   z-index: 3;
