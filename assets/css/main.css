@@ -1517,7 +1517,7 @@ section#prices .read-more:hover i {
 
 .services .service-item .image span {
   background-size: contain;
-  background-position: center left;
+  background-position: top left;
   background-repeat: no-repeat;
   width: 100%;
   position: absolute;
@@ -1535,6 +1535,18 @@ section#prices .read-more:hover i {
   height: 200px;
   margin-right: 1rem;
   margin-bottom: 0rem;
+  min-width: 160px;
+}
+.services .service-item .image::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-image: linear-gradient(transparent, white 70%);
+  z-index: 1;
+  pointer-events: none;
 }
 .services .service-item .btn {
   font-family: var(--heading-font);
