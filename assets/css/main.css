@@ -991,7 +991,7 @@ section,
 .hero .message-wrapper.message-1 {
   position: absolute;
   left: 75%;
-  top: 29%;
+  top: 35%;
 }
 
 @media (min-width: 768px) {
